@@ -1,0 +1,4 @@
+Taxon	PWilcoxon_P	Biserial_Cor	BodySite_P
+k__Bacteria; p__Tenericutes	0.125	0.8932214	0.0128251	
+k__Bacteria; p__Verrucomicrobia	0.125	0.8581544	0.0389877	
+k__Bacteria; p__Proteobacteria	0.125	-0.7812282	0.03951408	

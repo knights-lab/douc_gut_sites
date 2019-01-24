@@ -1,0 +1,177 @@
+Pathway	PWilcoxon_Q	Biserial_Cor	BodySite_Q
+C5-Branched dibasic acid metabolism	0.06528662	0.9829514	0.00296193
+Oxidative phosphorylation	0.06528662	0.9731012	0.00296193
+Energy metabolism	0.06528662	0.9744497	0.005151447
+Secondary bile acid biosynthesis	0.06528662	0.9594347	0.005151447
+Valine, leucine and isoleucine biosynthesis	0.06528662	0.974805	0.005151447
+Arginine and proline metabolism	0.06528662	0.9642011	0.006787187
+Pantothenate and CoA biosynthesis	0.06528662	0.9586251	0.006787187
+Porphyrin and chlorophyll metabolism	0.06528662	0.9717291	0.006787187
+Glycine, serine and threonine metabolism	0.06528662	0.9571806	0.007064236
+Lysine biosynthesis	0.06528662	0.9486648	0.007064236
+Carbon fixation pathways in prokaryotes	0.06528662	0.9469812	0.007119145
+Cellular antigens	0.06528662	-0.9112889	0.007119145
+Glycerophospholipid metabolism	0.06528662	0.9424738	0.007119145
+Phenylalanine, tyrosine and tryptophan biosynthesis	0.06528662	0.942019	0.007119145
+Tetracycline biosynthesis	0.06528662	0.9394856	0.007119145
+Transcription factors	0.06528662	0.9569296	0.007119145
+RNA transport	0.06528662	0.9313744	0.007207118
+Signal transduction mechanisms	0.06528662	0.949954	0.007207118
+ABC transporters	0.06528662	0.9426814	0.007467141
+Apoptosis	0.06528662	-0.9296081	0.007467141
+Biosynthesis of siderophore group nonribosomal peptides	0.06528662	-0.9342946	0.007467141
+Cysteine and methionine metabolism	0.06528662	0.9376023	0.007467141
+Fatty acid biosynthesis	0.06528662	0.9430721	0.007467141
+Histidine metabolism	0.06528662	0.9367908	0.007467141
+MAPK signaling pathway - yeast	0.06528662	0.9190141	0.007467141
+Methane metabolism	0.06528662	0.9242023	0.007467141
+Other transporters	0.06528662	0.8982573	0.007467141
+Others	0.06528662	0.9463486	0.007467141
+Pyruvate metabolism	0.06528662	0.9197423	0.007467141
+Replication, recombination and repair proteins	0.06528662	0.9347518	0.007467141
+Ribosome Biogenesis	0.06528662	0.9306011	0.007467141
+Thiamine metabolism	0.06528662	0.9308234	0.007467141
+Transcription machinery	0.06528662	0.9326922	0.007467141
+Tropane, piperidine and pyridine alkaloid biosynthesis	0.06528662	0.92698	0.007467141
+Ubiquinone and other terpenoid-quinone biosynthesis	0.06528662	-0.9107894	0.007467141
+Ubiquitin system	0.06528662	-0.9203004	0.007467141
+alpha-Linolenic acid metabolism	0.06528662	-0.8095391	0.007467141
+Bacterial invasion of epithelial cells	0.06528662	-0.9348696	0.007776791
+Amino acid metabolism	0.06528662	0.9236834	0.00799324
+Translation proteins	0.06528662	0.9169365	0.00799324
+Fatty acid elongation in mitochondria	0.06528662	0.9367263	0.008112061
+Fluorobenzoate degradation	0.06528662	-0.9267294	0.008112061
+Nitrotoluene degradation	0.06528662	0.9326423	0.008112061
+Chromosome	0.06528662	0.9129235	0.008147931
+Epithelial cell signaling in Helicobacter pylori infection	0.06528662	0.903416	0.008147931
+General function prediction only	0.06528662	0.9205551	0.008147931
+Lipid biosynthesis proteins	0.06528662	0.928337	0.008147931
+Transporters	0.06528662	0.90946	0.008147931
+Base excision repair	0.06528662	0.9082474	0.008266792
+Arachidonic acid metabolism	0.06528662	-0.8849517	0.008817716
+Taurine and hypotaurine metabolism	0.06528662	0.8781967	0.00889167
+Biotin metabolism	0.06528662	0.8989992	0.008999583
+Nitrogen metabolism	0.06528662	0.8971488	0.009546786
+Novobiocin biosynthesis	0.06528662	0.9069596	0.009605118
+Toluene degradation	0.06528662	-0.862575	0.009605118
+Cytoskeleton proteins	0.06528662	0.8865089	0.009737786
+Glycerolipid metabolism	0.06528662	0.8711653	0.009737786
+RNA degradation	0.06528662	0.9002218	0.009737786
+Antigen processing and presentation	0.06528662	0.8899861	0.009809592
+Glycolysis / Gluconeogenesis	0.06528662	0.8887747	0.009809592
+Progesterone-mediated oocyte maturation	0.06528662	0.8899861	0.009809592
+Prostate cancer	0.06528662	0.8908932	0.009809592
+Alanine, aspartate and glutamate metabolism	0.06528662	0.8749578	0.01043907
+Amino acid related enzymes	0.06528662	0.8853152	0.01043907
+Amoebiasis	0.06528662	0.9146076	0.01043907
+Caprolactam degradation	0.06528662	-0.8733129	0.01043907
+Cell cycle - Caulobacter	0.06528662	0.8820432	0.01043907
+Chaperones and folding catalysts	0.06528662	0.8826711	0.01043907
+DNA repair and recombination proteins	0.06528662	0.8863067	0.01043907
+Ion channels	0.06528662	-0.9035269	0.01043907
+NOD-like receptor signaling pathway	0.06528662	0.8856314	0.01043907
+Proteasome	0.06528662	0.8856587	0.01043907
+DNA replication proteins	0.06528662	0.8817194	0.01068214
+Pentose and glucuronate interconversions	0.06528662	0.8578078	0.0110151
+Tuberculosis	0.06528662	0.8832613	0.0110151
+Pentose phosphate pathway	0.06528662	0.8513394	0.01209522
+Steroid biosynthesis	0.06528662	-0.8160595	0.01209522
+D-Glutamine and D-glutamate metabolism	0.06528662	0.8779913	0.01255098
+Fructose and mannose metabolism	0.06528662	0.8483512	0.01276375
+Glutamatergic synapse	0.06528662	0.8659009	0.01276375
+Mismatch repair	0.06528662	0.8660872	0.01276375
+Peptidases	0.06528662	0.8639772	0.01276375
+Peptidoglycan biosynthesis	0.06528662	0.8709629	0.01276375
+Carbohydrate metabolism	0.06528662	0.8204312	0.01303916
+Germination	0.06528662	0.8531995	0.01303916
+Vitamin B6 metabolism	0.06528662	0.8858454	0.01303916
+Aminoacyl-tRNA biosynthesis	0.06528662	0.8632556	0.01316134
+Protein export	0.06528662	0.8602924	0.01321477
+Folate biosynthesis	0.06528662	0.8469189	0.0133042
+Cyanoamino acid metabolism	0.06528662	0.841025	0.01334486
+One carbon pool by folate	0.06528662	0.8656137	0.01354951
+Type I diabetes mellitus	0.06528662	0.8483827	0.01478051
+Phenylpropanoid biosynthesis	0.06528662	0.8212969	0.01501456
+Homologous recombination	0.06528662	0.8492503	0.0151296
+Biosynthesis of ansamycins	0.06528662	0.8230406	0.01565242
+Nicotinate and nicotinamide metabolism	0.06528662	0.8383903	0.01580845
+Citrate cycle (TCA cycle)	0.06528662	0.8798688	0.01581884
+DNA replication	0.06528662	0.8419819	0.0159916
+Galactose metabolism	0.06528662	0.8171845	0.0159916
+Pyrimidine metabolism	0.06528662	0.8442824	0.0159916
+Cardiac muscle contraction	0.06528662	-0.8342734	0.01630155
+Ribosome biogenesis in eukaryotes	0.06528662	0.8567048	0.01630155
+Sporulation	0.06528662	0.8209093	0.01630155
+Translation factors	0.06528662	0.8425498	0.01630155
+Carbon fixation in photosynthetic organisms	0.06528662	0.8134455	0.01683123
+Purine metabolism	0.06528662	0.8318675	0.01683123
+Starch and sucrose metabolism	0.06528662	0.8116513	0.01683123
+Parkinson's disease	0.06528662	-0.8288897	0.01707386
+Ribosome	0.06528662	0.8349287	0.01707386
+Shigellosis	0.06528662	-0.8203431	0.01734097
+Bladder cancer	0.06528662	-0.8237074	0.01734889
+Geraniol degradation	0.06528662	-0.7852623	0.01734889
+Terpenoid backbone biosynthesis	0.06528662	0.8418888	0.01734889
+Type II diabetes mellitus	0.06528662	0.8194404	0.01734889
+Selenocompound metabolism	0.1084656	0.8346171	0.01735079
+Bacterial toxins	0.06528662	0.8276236	0.0175251
+Glycosaminoglycan biosynthesis - chondroitin sulfate	0.06528662	-0.797264	0.0175251
+Insulin signaling pathway	0.06528662	0.7927194	0.0175251
+Lipid metabolism	0.06528662	0.857603	0.0175251
+Plant-pathogen interaction	0.06528662	0.8301209	0.0175251
+Transcription related proteins	0.06528662	-0.8266326	0.0175251
+RNA polymerase	0.06528662	0.825773	0.01759431
+Sphingolipid metabolism	0.06528662	0.8043909	0.01763121
+Nucleotide excision repair	0.06528662	0.8213657	0.01765771
+Drug metabolism - other enzymes	0.06528662	0.8260882	0.01796372
+Bacterial chemotaxis	0.06528662	0.8200313	0.01800621
+Glyoxylate and dicarboxylate metabolism	0.1084656	0.8574775	0.01800621
+Riboflavin metabolism	0.06528662	0.7117916	0.01800621
+Restriction enzyme	0.06528662	0.8473043	0.01807727
+Xylene degradation	0.06528662	0.8079421	0.01863245
+Primary bile acid biosynthesis	0.06528662	0.8791685	0.01879415
+Protein processing in endoplasmic reticulum	0.06528662	0.8272686	0.01879415
+Two-component system	0.1084656	0.7430581	0.02030041
+Endocytosis	0.06528662	-0.7547494	0.02128788
+Fc gamma R-mediated phagocytosis	0.06528662	-0.7547669	0.02128788
+GnRH signaling pathway	0.06528662	-0.7547494	0.02128788
+Streptomycin biosynthesis	0.06528662	0.7712086	0.02139952
+Dioxin degradation	0.06528662	0.8003974	0.02212609
+Phosphatidylinositol signaling system	0.06528662	0.7923245	0.0223401
+Amino sugar and nucleotide sugar metabolism	0.1084656	0.7958129	0.02259637
+Prenyltransferases	0.1084656	0.8069393	0.02259637
+Staphylococcus aureus infection	0.06528662	-0.8029884	0.02280912
+Other glycan degradation	0.06528662	0.7787261	0.02290669
+Glutathione metabolism	0.06528662	-0.7368818	0.02371743
+Lipopolysaccharide biosynthesis proteins	0.06528662	-0.7814067	0.0240809
+Lysosome	0.06528662	0.7812022	0.02425452
+Synthesis and degradation of ketone bodies	0.06528662	-0.7404634	0.02425452
+Chloroalkane and chloroalkene degradation	0.1084656	0.8322207	0.026656
+Sulfur metabolism	0.06528662	0.7950083	0.02743244
+Inositol phosphate metabolism	0.1084656	0.8273852	0.02762679
+Phosphonate and phosphinate metabolism	0.06528662	0.7846399	0.02868374
+Lipopolysaccharide biosynthesis	0.06528662	-0.7810625	0.02955732
+Glycosaminoglycan degradation	0.06528662	0.7510901	0.02985111
+Cell division	0.06528662	0.7819504	0.03133788
+Polyketide sugar unit biosynthesis	0.06528662	0.7253766	0.03182404
+Tryptophan metabolism	0.1084656	-0.7394955	0.03271778
+Glycosphingolipid biosynthesis - globo series	0.06528662	0.7452387	0.0329698
+Protein kinases	0.1084656	0.7457715	0.03301681
+Steroid hormone biosynthesis	0.06528662	-0.7071364	0.03571781
+Valine, leucine and isoleucine degradation	0.1084656	-0.7221482	0.03571781
+African trypanosomiasis	0.06528662	-0.7439691	0.03585112
+Nucleotide metabolism	0.1084656	0.7231927	0.03585112
+Butirosin and neomycin biosynthesis	0.06528662	0.7292206	0.03630327
+Zeatin biosynthesis	0.1084656	0.7538231	0.03809018
+Limonene and pinene degradation	0.1084656	-0.7269754	0.03901564
+Other ion-coupled transporters	0.1084656	0.7472464	0.04003035
+Adipocytokine signaling pathway	0.1084656	0.7977684	0.04100482
+Aminobenzoate degradation	0.06528662	-0.7383735	0.04237746
+Chlorocyclohexane and chlorobenzene degradation	0.1084656	-0.7883969	0.04237746
+Pertussis	0.1084656	-0.7401979	0.04237746
+Renal cell carcinoma	0.1084656	-0.8015522	0.04237746
+Chagas disease (American trypanosomiasis)	0.1084656	-0.7923631	0.04292358
+Isoflavonoid biosynthesis	0.06528662	-0.5662815	0.04503393
+Biosynthesis of vancomycin group antibiotics	0.1084656	0.7008741	0.04542681
+Glycosyltransferases	0.1084656	0.753302	0.04592451
+Huntington's disease	0.1084656	-0.7067553	0.04953887

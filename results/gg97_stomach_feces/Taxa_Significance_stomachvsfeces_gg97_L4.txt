@@ -1,0 +1,13 @@
+Taxon	PWilcoxon_P	Biserial_Cor	BodySite_P
+ c__Epsilonproteobacteria; o__Campylobacterales	0.1057692	0.8714876	0.002854827	
+ c__Gammaproteobacteria; o__Pasteurellales	0.1057692	-0.9553763	0.002854827	
+ c__Mollicutes; o__RF39	0.1057692	0.9166982	0.002854827	
+ c__Bacilli; o__Lactobacillales	0.1057692	-0.8067794	0.01431723	
+ c__Bacilli; o__Bacillales	0.1057692	-0.8823071	0.02035339	
+ c__Verrucomicrobiae; o__Verrucomicrobiales	0.1057692	0.8125606	0.02631156	
+ c__Actinobacteria; o__Actinomycetales	0.1057692	-0.7361405	0.03067841	
+ c__Clostridia; o__Clostridiales	0.1057692	0.8149926	0.03067841	
+ c__4C0d-2; o__YS2	0.1375	0.864562	0.03258721	
+ c__Alphaproteobacteria; o__RF32	0.1057692	0.8338414	0.04172661	
+ c__Gammaproteobacteria; o__Aeromonadales	0.1375	-0.7882126	0.04409649	
+ c__Gammaproteobacteria; o__Pseudomonadales	0.1375	-0.8111362	0.04409649	
