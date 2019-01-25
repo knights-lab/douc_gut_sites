@@ -44,6 +44,16 @@ taxa.rare <- data.frame(t(rrarefy(t(taxa), 58550)))
 colSums(taxa.rare)
 colSums(otu.rare)
 
+#### Phylum-level Summary ####
+# Aggregate taxa table by phylum, get relative abundances
+names_p <- strsplit(as.character(rownames(taxa)),";")        # Split by semicolon into levels
+names_p <- sapply(names_p,function(x) paste(head(x,2),collapse=";"))
+taxa_p <- taxa
+taxa_p$names <- names_p
+taxa_p <- aggregate(x = taxa_p[,1:12], by = list(taxa_p$names), FUN = sum)
+rownames(taxa_p) <- taxa_p$Group.1; taxa_p <- taxa_p[,2:13];
+fore_p <- rev(sort(rowSums(taxa_p[,grep(".SC", colnames(taxa_p))])))
+hind_p <- rev(sort(rowSums(taxa_p[,grep("MB", colnames(taxa_p))])))
 
 #### F/B Ratio ####
 # Plot Read Depth
