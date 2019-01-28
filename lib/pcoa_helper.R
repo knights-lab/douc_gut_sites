@@ -22,6 +22,7 @@ plot_pcoa = function(dist_obj, sub.map, category, do_ellipse = T, title = NULL) 
   PCOA[,category] = sub.map[,category];
   p = ggplot(PCOA) +
     geom_point(aes(x = PC1, y = PC2, color = PCOA[,category])) +
+    scale_color_manual(values = c("brown1","deepskyblue")) +
     theme(panel.background = element_blank(), axis.text = element_text(size=12), axis.title = element_text(size = 14)) +
     labs(title=title) +
     labs(color=category) + labs(fill=category);

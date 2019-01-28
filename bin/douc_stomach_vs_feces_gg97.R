@@ -75,6 +75,7 @@ tapply(FBratio, map$Bodysite, sd)    # Gets the standard devs per group
 # plot(colSums(taxa[isFirmicutes,]) ~ map$Bodysite)
 # New Plot of F:B ratio
 fb_ratio_plot <- ggplot(df, aes(x=Bodysite, y=FBratio, fill=Bodysite)) +
+  scale_fill_manual(values=c("brown1","deepskyblue")) +
   geom_boxplot(outlier.size = 0) +
   geom_jitter(pch = 21, stroke = 0.5, width = 0.2, size = 2.5) +
   theme_classic() +
@@ -138,7 +139,8 @@ otu.ad = data.frame(Div=div.shannon, Bodysite=map$Bodysite)
 grps = levels(map$Bodysite)
 lab = "Alpha Diversity (Shannon)" #paste0("Alpha Diversity (",dix,")")
 pdf(paste0("../results/gg97_stomach_feces/AlphaDiv_bodysite_doucvsfeces_gg97.pdf"),width=6,height=5.5)
-plot(ggplot(otu.ad,aes(x=Bodysite,y=Div,fill=Bodysite)) + ylab(lab) +xlab("Bodysite") + geom_violin(alpha=0.3) + 
+plot(ggplot(otu.ad,aes(x=Bodysite,y=Div,fill=Bodysite)) + ylab(lab) +xlab("Bodysite") + geom_violin(alpha=0.3) +
+       scale_fill_manual(values = c("brown1","deepskyblue")) +
        geom_signif(comparisons = list(grps[c(1,2)]), test='t.test', map_signif_level = T) + 
        geom_jitter(aes(color=Bodysite),position=position_jitter(0.2),size=2) +
        theme(panel.background = element_blank(), axis.text = element_text(size=12), axis.title = element_text(size = 14))  )
