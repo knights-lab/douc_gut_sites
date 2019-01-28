@@ -76,7 +76,7 @@ tapply(FBratio, map$Bodysite, sd)    # Gets the standard devs per group
 # New Plot of F:B ratio
 fb_ratio_plot <- ggplot(df, aes(x=Bodysite, y=FBratio, fill=Bodysite)) +
   geom_boxplot(outlier.size = 0) +
-  geom_jitter(pch = 21, alpha = 0.8, stroke = 0.9, width = 0.2) +
+  geom_jitter(pch = 21, stroke = 0.5, width = 0.2, size = 2.5) +
   theme_classic() +
   labs(x = "Gut-site", y = "Log F:B ratio") +
   guides(fill = guide_legend(title = "Gut-site"))
@@ -266,9 +266,13 @@ for (L in 1:length(bT)) {
   otu.m = merge(otu.m, map[,c("SampleID","Bodysite")], by="SampleID")
   otu.m$Taxa = factor(otu.m$Taxa,levels=byAbundance,ordered=T) # add Taxa column
   
+  # Acrobatics for ggplot2 - taxasummary overall
+  otu.m.all <- aggregate(otu.m$RelativeAbundance, by = list(otu.m$Taxa, otu.m$Bodysite), FUN = sum, na.rm = T)
+  colnames(otu.m.all) <- c("Taxa", "Bodysite", "RelativeAbundance")
+  
   ## Plot according to Bodysite, sorted by abundance
   pdf(paste0("../results/gg97_stomach_feces/TaxaSummary_stomachvsfeces_gg97_L",bT[L],".pdf"), width=8, height=7) # Make room for legend
-  plot(ggplot(otu.m, aes(x = Bodysite, y = RelativeAbundance, fill = Taxa)) +
+  plot(ggplot(otu.m.all, aes(x = Bodysite, y = RelativeAbundance, fill = Taxa)) +
          geom_bar(stat ="identity", position="fill") + labs(x="Bodysite",y="Root Relative Abundance") +
          guides(fill=guide_legend(ncol=1)) +
          theme(panel.background = element_blank(), axis.text = element_text(size=12), axis.title = element_text(size = 14)) +
@@ -675,4 +679,3 @@ legend("topright",      # location of the legend on the heatmap plot
        xpd=TRUE  # allow drawing outside
 )
 dev.off()
-
