@@ -76,11 +76,11 @@ tapply(FBratio, map$Bodysite, sd)    # Gets the standard devs per group
 # New Plot of F:B ratio
 fb_ratio_plot <- ggplot(df, aes(x=Bodysite, y=FBratio, fill=Bodysite)) +
   scale_fill_manual(values=c("brown1","deepskyblue")) +
-  geom_boxplot(outlier.size = 0) +
-  geom_jitter(pch = 21, stroke = 0.5, width = 0.2, size = 2.5) +
+  geom_boxplot(outlier.size = 0, alpha = 0.3) +
+  geom_jitter(pch = 21, stroke = 0, width = 0.2, size = 2.5) +
   theme_classic() +
-  labs(x = "Gut-site", y = "Log F:B ratio") +
-  guides(fill = guide_legend(title = "Gut-site"))
+  labs(x = "Gut site", y = "Log F:B ratio") +
+  guides(fill = guide_legend(title = "Gut site"))
 pdf("../results/gg97_stomach_feces/FBratio_overlay_bodysite_stomach_feces_gg97.pdf", width=6, height=5.5)
 fb_ratio_plot
 dev.off()
