@@ -111,6 +111,9 @@ graphics.off()
 adonis(pcoa.u ~ map$Bodysite)       # Do stats for clustering (unweighted)
 adonis(pcoa.w ~ map$Bodysite)       # Do stats for clustering (weighted)
 adonis(bray ~ map$Bodysite)         # Do stats for bray-curtis too, why not
+adonis(pcoa.u ~ map$Subject_Num)    # individualized
+adonis(pcoa.w ~ map$Subject_Num)    # individualized
+adonis(bray ~ map$Subject_Num)      # individualized
 
 
 #### PCoA plots - Dead or Alive #### (requires map and otu table loaded) 
@@ -147,6 +150,7 @@ plot(ggplot(otu.ad,aes(x=Bodysite,y=Div,fill=Bodysite)) + ylab(lab) +xlab("Bodys
 dev.off()
 tapply(otu.ad$Div, otu.ad$Bodysite, mean)    # Gets the mean Shan index per group
 tapply(otu.ad$Div, otu.ad$Bodysite, sd)      # Gets the standard devs per group
+
 
 otu.ad = data.frame(Div=rowSums(otu.r > 0), Bodysite=map$Bodysite)
 grps = levels(map$Bodysite)
@@ -681,3 +685,16 @@ legend("topright",      # location of the legend on the heatmap plot
        xpd=TRUE  # allow drawing outside
 )
 dev.off()
+
+
+#### PERMANOVA-S ####
+phyobj_all <- phyloseq(otu_table(t(otu), taxa_are_rows = F), tree)
+otu_names <- rownames(otu)[rowSums(otu) > 10]
+phyobj_trimmed <- prune_taxa(otu_names, phyobj_all)
+otu_perms <- rownames_to_column(as.data.frame(t(otu[otu_names,])), var = "subject_ID")
+tree_perms <- phy_tree(phyobj_trimmed)
+#write.table(otu_perms, file = "permanova-s/miProfile_v2.0/belly_bugs/input/t_douc_otu_table.txt", row.names = F, col.names = T, sep = "\t", quote=F)
+#write.tree(tree_perms, file = "permanova-s/miProfile_v2.0/belly_bugs/input/abbrev_gg97.tre", append=F, digits=10, tree.names=F)
+# Use miLineage available here (https://tangzheng1.github.io/tanglab/software.html) to run PERMANOVA-S on the above otu and tree files
+# Specify unweighted UniFrac, weighted UniFrac, and Bray Curtis distances
+# Output contains p-values determined by covariates (Bodysite) and strata (Individual)
