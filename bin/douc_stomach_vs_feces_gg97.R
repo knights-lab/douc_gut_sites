@@ -11,10 +11,12 @@ library(robCompositions) # Composition magic
 library(polycor)
 library(beeswarm)
 library(reshape2)
+library(tibble)
 library(ltm)
 
 #### DATA WRANGLING ####
 map = read.delim('../data/gg97/douc_stomach_vs_feces_matching_mapfile_082417.txt', row.names = 1) # Grab the map
+map$Subject_Num <- gsub("a", "", gsub("b", "", map$Subject))
 # Load and Filter OTU and Taxa tables with less than 1000 sequences
 taxa = read.delim('../data/gg97/douc_stomach_vs_feces_taxatable_gg97.txt',row=1,as.is=T)
 taxa = taxa[,rownames(map)]  # sync the sample names for the Taxa table
@@ -111,9 +113,9 @@ graphics.off()
 adonis(pcoa.u ~ map$Bodysite)       # Do stats for clustering (unweighted)
 adonis(pcoa.w ~ map$Bodysite)       # Do stats for clustering (weighted)
 adonis(bray ~ map$Bodysite)         # Do stats for bray-curtis too, why not
-adonis(pcoa.u ~ map$Subject_Num)    # individualized
-adonis(pcoa.w ~ map$Subject_Num)    # individualized
-adonis(bray ~ map$Subject_Num)      # individualized
+adonis(pcoa.u ~ map$Subject_Num)    # individual is insignificant
+adonis(pcoa.w ~ map$Subject_Num)    # individual is insignificant
+adonis(bray ~ map$Subject_Num)      # individual is insignificant
 
 
 #### PCoA plots - Dead or Alive #### (requires map and otu table loaded) 
