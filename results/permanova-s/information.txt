@@ -1,0 +1,18 @@
+## === specify the variable names for the covariate in meta file === ##
+COVA = Bodysite
+STRATA = Individual
+
+## === request distances === ##
+DIST = Bray-Curtis
+DIST_NORM = proportion
+DIST_OFILE = Dbc.dist
+
+DIST = uwUniFrac
+DIST_NORM = proportion
+DIST_OFILE = Duwuf.dist
+
+DIST = wUniFrac
+DIST_NORM = proportion
+DIST_OFILE = Dwuf.dist
+
+NPERM = 999

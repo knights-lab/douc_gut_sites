@@ -1,0 +1,2 @@
+Weighted_UniFrac	Unweighted_UniFrac	Bray_Curtis	Unified	
+-2.315842E+77(3.736204E+00)	-2.315842E+77(3.575758E+00)	1.976263E-323(2.796433E+00)	0.000000E+00	
