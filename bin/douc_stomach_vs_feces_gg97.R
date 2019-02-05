@@ -166,6 +166,8 @@ dev.off()
 tapply(otu.ad$Div, otu.ad$Bodysite, mean)    # Gets the mean num OTUs per group
 tapply(otu.ad$Div, otu.ad$Bodysite, sd)      # Gets the standard devs per group
 
+# Statistical test of alpha diversity - Mann Whitney
+wilcox.test(otu.ad$Div ~ otu.ad$Bodysite)
 
 #### Alpha diversity violin plots - Alive or Deceased####
 # (mindepth = min(colSums(otu)))
