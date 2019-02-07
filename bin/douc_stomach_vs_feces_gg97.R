@@ -702,3 +702,6 @@ tree_perms <- phy_tree(phyobj_trimmed)
 # Use miLineage available here (https://tangzheng1.github.io/tanglab/software.html) to run PERMANOVA-S on the above otu and tree files
 # Specify unweighted UniFrac, weighted UniFrac, and Bray Curtis distances
 # Output contains p-values determined by covariates (Bodysite) and strata (Individual)
+
+#### Compare Closed/Open Counts ####
+open_counts <- data.frame()
