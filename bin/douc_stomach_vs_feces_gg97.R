@@ -704,4 +704,30 @@ tree_perms <- phy_tree(phyobj_trimmed)
 # Output contains p-values determined by covariates (Bodysite) and strata (Individual)
 
 #### Compare Closed/Open Counts ####
-open_counts <- data.frame()
+open_counts <- c(66880, 85335, 74942, 74569, 66540, 72675, 60170, 71385, 77138, 72003, 65147, 69098)
+names(open_counts) <- c("SZ.SC7", "SZ.SC6", "SZ.SC4", "SZ.SC5", "SZMB10", "SZ.SC2", "SZMB12", "SZMB7", "SZMB6", "SZMB5", "SZ.SC1", "SZMB9")
+depth_df <- data.frame(Sample_ID = colnames(otu), Closed_Ref = colSums(otu),
+                       Open_Ref = open_counts[match(colnames(otu), names(open_counts))],
+                       Bodysite = map$Bodysite,
+                       Subject_Num = map$Subject_Num)
+# closed reference OTU picking
+pdf("../results/gg97_stomach_feces/counts_closed_ref_gg97.pdf", width=4, height=3.5)
+ggplot(depth_df, aes(x=Bodysite, y=Closed_Ref, fill=Bodysite)) +
+  scale_fill_manual(values=c("brown1","deepskyblue")) +
+  geom_boxplot(outlier.size = 0, alpha = 0.3) +
+  geom_jitter(pch = 21, stroke = 0, width = 0.2, size = 2.5) +
+  theme_classic() +
+  labs(x = "Gut site", y = "OTU Counts (closed)") +
+  guides(fill = guide_legend(title = "Gut site"))
+dev.off()
+# open reference OTU picking
+pdf("../results/gg97_stomach_feces/counts_open_ref.pdf", width=4, height=3.5)
+ggplot(depth_df, aes(x=Bodysite, y=Open_Ref, fill=Bodysite)) +
+  scale_fill_manual(values=c("brown1","deepskyblue")) +
+  geom_boxplot(outlier.size = 0, alpha = 0.3) +
+  geom_jitter(pch = 21, stroke = 0, width = 0.2, size = 2.5) +
+  theme_classic() +
+  labs(x = "Gut site", y = "OTU Counts (open)") +
+  guides(fill = guide_legend(title = "Gut site"))
+dev.off()
+
