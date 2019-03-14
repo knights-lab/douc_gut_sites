@@ -146,7 +146,7 @@ lab = "Alpha Diversity (Shannon)" #paste0("Alpha Diversity (",dix,")")
 pdf(paste0("../results/gg97_stomach_feces/AlphaDiv_bodysite_doucvsfeces_gg97.pdf"),width=6,height=5.5)
 plot(ggplot(otu.ad,aes(x=Bodysite,y=Div,fill=Bodysite)) + ylab(lab) +xlab("Bodysite") + geom_violin(alpha=0.3) +
        scale_fill_manual(values = c("brown1","deepskyblue")) +
-       geom_signif(comparisons = list(grps[c(1,2)]), test='t.test', map_signif_level = T) + 
+       geom_signif(comparisons = list(grps[c(1,2)]), test='wilcox.test', test.args = c(paired = T), map_signif_level = T) + 
        geom_jitter(aes(color=Bodysite),position=position_jitter(0.2),size=2) +
        theme(panel.background = element_blank(), axis.text = element_text(size=12), axis.title = element_text(size = 14))  )
 dev.off()
@@ -161,7 +161,7 @@ grps = levels(map$Bodysite)
 lab = "Alpha Diversity (Number of OTUs)" 
 pdf(paste0("../results/gg97_stomach_feces/numOTU_bodysite_stomachvsfeces_gg97.pdf"),width=6,height=5.5)
 plot(ggplot(otu.ad,aes(x=Bodysite,y=Div,fill=Bodysite)) + ylab(lab) + xlab("Bodysite") + geom_violin(alpha=0.3) + 
-       geom_signif(comparisons = list(grps[c(1,2)]), test='t.test', map_signif_level = T) + 
+       geom_signif(comparisons = list(grps[c(1,2)]), test='wilcox.test', test.args = c(paired = T), map_signif_level = T) + 
        geom_jitter(aes(color=Bodysite),position=position_jitter(0.2),size=2) +
        theme(panel.background = element_blank(), axis.text = element_text(size=12), axis.title = element_text(size = 14))  )
 dev.off()
