@@ -152,7 +152,9 @@ plot(ggplot(otu.ad,aes(x=Bodysite,y=Div,fill=Bodysite)) + ylab(lab) +xlab("Bodys
 dev.off()
 tapply(otu.ad$Div, otu.ad$Bodysite, mean)    # Gets the mean Shan index per group
 tapply(otu.ad$Div, otu.ad$Bodysite, sd)      # Gets the standard devs per group
-
+plot(density(otu.ad$Div))                    # Look at density of div values
+qqnorm(otu.ad$Div, pch = 20); qqline(otu.ad$Div, col = "steelblue"); # Quantile-Quantile plot
+wilcox.test(otu.ad$Div ~ otu.ad$Bodysite, paired=TRUE) # Wilcoxon Signed Rank (dependent 2 group)
 
 otu.ad = data.frame(Div=rowSums(otu.r > 0), Bodysite=map$Bodysite)
 grps = levels(map$Bodysite)
@@ -165,9 +167,9 @@ plot(ggplot(otu.ad,aes(x=Bodysite,y=Div,fill=Bodysite)) + ylab(lab) + xlab("Body
 dev.off()
 tapply(otu.ad$Div, otu.ad$Bodysite, mean)    # Gets the mean num OTUs per group
 tapply(otu.ad$Div, otu.ad$Bodysite, sd)      # Gets the standard devs per group
-
-# Statistical test of alpha diversity - Mann Whitney
-wilcox.test(otu.ad$Div ~ otu.ad$Bodysite)
+plot(density(otu.ad$Div))                    # Look at density of div values
+qqnorm(otu.ad$Div, pch = 20); qqline(otu.ad$Div, col = "steelblue"); # Quantile-Quantile plot
+wilcox.test(otu.ad$Div ~ otu.ad$Bodysite, paired=TRUE) # Wilcoxon Signed Rank (dependent 2 group)
 
 #### Alpha diversity violin plots - Alive or Deceased####
 # (mindepth = min(colSums(otu)))
